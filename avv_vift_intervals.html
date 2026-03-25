@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Auftragsverarbeitungsvertrag (AVV) – VIFT Intervals</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      font-size: 15px; line-height: 1.75; color: #1a1a1a; background: #f9f9fb;
+    }
+    .page-wrap { max-width: 860px; margin: 0 auto; padding: 40px 24px 80px; }
+    .doc-card {
+      background: #fff; border-radius: 16px;
+      box-shadow: 0 2px 12px rgba(0,0,0,.08);
+      padding: 48px 56px;
+    }
+    @media(max-width:640px){ .doc-card{ padding: 28px 20px; } }
+
+    .doc-header { text-align: center; margin-bottom: 40px; }
+    .doc-header h1 { font-size: 26px; font-weight: 800; color: #1F3864; margin-bottom: 6px; }
+    .doc-header .sub { font-size: 15px; color: #2E5FA3; font-weight: 600; margin-bottom: 4px; }
+    .doc-header .meta { font-size: 13px; color: #888; }
+
+    .parties {
+      display: grid; grid-template-columns: 1fr auto 1fr;
+      gap: 0 12px; margin-bottom: 40px;
+    }
+    .party-card {
+      background: #F0F4FB; border-radius: 10px;
+      padding: 20px; border: 1px solid #D5E0F0;
+    }
+    .party-card.right { background: #F7F7F7; border-color: #E0E0E0; }
+    .party-label { font-size: 12px; font-weight: 700; color: #2E5FA3; text-transform: uppercase; letter-spacing: .06em; margin-bottom: 10px; }
+    .party-card p { font-size: 14px; color: #333; line-height: 1.6; }
+    .party-card .placeholder { color: #AAA; font-style: italic; }
+    .und-divider { display: flex; align-items: center; justify-content: center; font-weight: 700; color: #999; font-size: 14px; }
+
+    h2 {
+      font-size: 17px; font-weight: 700; color: #1F3864;
+      margin-top: 40px; margin-bottom: 10px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #2E5FA3;
+    }
+    h3 { font-size: 15px; font-weight: 600; color: #2E5FA3; margin-top: 20px; margin-bottom: 6px; }
+    p { margin-bottom: 12px; color: #333; }
+    ul { margin: 8px 0 14px 22px; color: #333; }
+    ul li { margin-bottom: 5px; }
+
+    table { width: 100%; border-collapse: collapse; margin: 14px 0 20px; font-size: 14px; }
+    th { background: #EBF0F8; text-align: left; padding: 9px 12px; font-weight: 700; border: 1px solid #ccc; color: #1F3864; }
+    td { padding: 8px 12px; border: 1px solid #ddd; vertical-align: top; }
+    tr:nth-child(even) td { background: #F7F9FD; }
+
+    .warning-box {
+      background: #FFFBEB; border-left: 4px solid #F59E0B;
+      padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0;
+      font-size: 14px; color: #78350F;
+    }
+
+    .sig-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 32px; margin-top: 48px;
+    }
+    .sig-block { display: flex; flex-direction: column; gap: 6px; }
+    .sig-line {
+      border-bottom: 2px solid #333; height: 48px; width: 100%;
+    }
+    .sig-label { font-size: 12px; color: #777; }
+
+    .field-row {
+      display: flex; align-items: flex-end; gap: 12px;
+      margin-bottom: 12px;
+    }
+    .field-label { font-size: 14px; color: #555; white-space: nowrap; min-width: 140px; }
+    .field-line { flex: 1; border-bottom: 1px solid #AAA; height: 28px; }
+
+    .print-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: #1F3864; color: #fff; border: none; border-radius: 8px;
+      padding: 12px 24px; font-size: 15px; font-weight: 600; cursor: pointer;
+      margin-bottom: 32px; text-decoration: none;
+    }
+    .print-btn:hover { background: #2E5FA3; }
+
+    @media print {
+      body { background: white; }
+      .page-wrap { padding: 0; }
+      .doc-card { box-shadow: none; border-radius: 0; padding: 20mm; }
+      .print-btn { display: none; }
+    }
+  </style>
+</head>
+<body>
+<div class="page-wrap">
+  <button class="print-btn" onclick="window.print()">&#128438; Drucken / Als PDF speichern</button>
+
+  <div class="doc-card">
+    <div class="doc-header">
+      <h1>Auftragsverarbeitungsvertrag (AVV)</h1>
+      <p class="sub">gemäß Art. 28 DSGVO</p>
+      <p class="meta">VIFT Intervals – Alexander Braun | Stand: März 2025</p>
+    </div>
+
+    <!-- Parties -->
+    <div class="parties">
+      <div class="party-card">
+        <div class="party-label">Verantwortlicher (Auftraggeber)</div>
+        <p>
+          <strong>Alexander Braun</strong><br>
+          VIFT Intervals<br>
+          Merscheider Straße 285<br>
+          42699 Solingen<br>
+          <a href="/cdn-cgi/l/email-protection#7a1b161f021b141e1f085718081b0f143a171818081b0f14541e1f"><span class="__cf_email__" data-cfemail="37565b524f56595352451a5545564259775a555545564259195352">[email&#160;protected]</span></a><br><br>
+          <em style="font-size:13px;color:#888">(nachfolgend: „Auftraggeber")</em>
+        </p>
+      </div>
+      <div class="und-divider">und</div>
+      <div class="party-card right">
+        <div class="party-label">Auftragnehmer</div>
+        <p>
+          <span class="placeholder">[Name des Vereins / Trainers]</span><br>
+          <span class="placeholder">[Adresse]</span><br>
+          <span class="placeholder">[PLZ Ort]</span><br>
+          <span class="placeholder">[E-Mail]</span><br><br>
+          <em style="font-size:13px;color:#888">(nachfolgend: „Auftragnehmer")</em>
+        </p>
+      </div>
+    </div>
+
+    <!-- §1 -->
+    <h2>§ 1 Gegenstand und Dauer des Vertrages</h2>
+    <p>(1) Dieser AVV regelt die Rechte und Pflichten im Zusammenhang mit der Verarbeitung personenbezogener Daten im Rahmen der Nutzung der App <strong>VIFT Intervals</strong>.</p>
+    <p>(2) Der Auftragnehmer erhält im Coach-Dashboard Zugang zu personenbezogenen Daten von Athleten, die ihre Einwilligung zur Datenweitergabe erteilt haben.</p>
+    <p>(3) Dieser Vertrag gilt ab Unterzeichnung auf unbestimmte Zeit, solange der Auftragnehmer Zugang zum Coach-Dashboard hat.</p>
+
+    <!-- §2 -->
+    <h2>§ 2 Art, Zweck und Umfang der Datenverarbeitung</h2>
+    <h3>2.1 Art der Daten</h3>
+    <ul>
+      <li>Name und Kontaktdaten der Athleten</li>
+      <li>Geburtsdatum und Alter</li>
+      <li>Körperliche Merkmale (Gewicht, Körpergröße, Geschlecht)</li>
+      <li>Sportart und Spielposition</li>
+      <li>VIFT-Werte (Leistungsdiagnostik)</li>
+      <li>Trainingsdaten und -verläufe</li>
+    </ul>
+    <h3>2.2 Zweck</h3>
+    <p>Sportliche Trainingssteuerung und Leistungsdiagnostik im Rahmen des Coach-Dashboards.</p>
+    <h3>2.3 Betroffene Personen</h3>
+    <p>Athleten der App VIFT Intervals, die ihrer Datenweitergabe an den Auftragnehmer aktiv zugestimmt haben.</p>
+
+    <!-- §3 -->
+    <h2>§ 3 Pflichten des Auftragnehmers</h2>
+    <p>Der Auftragnehmer verpflichtet sich:</p>
+    <ul>
+      <li>Daten ausschließlich gemäß dokumentierten Weisungen des Auftraggebers zu verarbeiten</li>
+      <li>Vertraulichkeit zu gewährleisten und nur autorisierten Personen Zugang zu gewähren</li>
+      <li>Technische und organisatorische Maßnahmen gemäß Art. 32 DSGVO umzusetzen</li>
+      <li>Keine Daten ohne schriftliche Genehmigung des Auftraggebers an Dritte weiterzugeben</li>
+      <li>Datenpannen unverzüglich an den Auftraggeber zu melden</li>
+      <li>Alle Mitarbeiter mit Datenzugang auf Vertraulichkeit zu verpflichten</li>
+    </ul>
+
+    <!-- §4 -->
+    <h2>§ 4 Besondere Pflicht: Einwilligung Minderjähriger</h2>
+    <p>(1) Bei Athleten unter 16 Jahren ist der Auftragnehmer verpflichtet:</p>
+    <ul>
+      <li>Die <strong>schriftliche Einwilligung eines Erziehungsberechtigten</strong> vor der erstmaligen Datenfreigabe einzuholen</li>
+      <li>Die Einwilligungserklärungen zu archivieren und auf Anfrage vorzulegen</li>
+      <li>In der App die Trainer-Bestätigung (<em>parentalConsentByCoach</em>) erst nach vorliegender Einwilligung zu aktivieren</li>
+    </ul>
+    <p>(2) Zur Einholung der elterlichen Einwilligung ist ausschließlich die vom Auftraggeber bereitgestellte Vorlage zu verwenden.</p>
+
+    <!-- §5 -->
+    <h2>§ 5 Technische und organisatorische Maßnahmen (TOM)</h2>
+    <table>
+      <thead><tr><th>Maßnahme</th><th>Beschreibung</th></tr></thead>
+      <tbody>
+        <tr><td>Zutrittskontrolle</td><td>Zugang zu Geräten mit App-Zugang nur für autorisierte Personen</td></tr>
+        <tr><td>Zugangskontrolle</td><td>Verwendung eines sicheren Passwortes für den App-Account</td></tr>
+        <tr><td>Vertraulichkeit</td><td>Keine Weitergabe von Anmeldedaten an Dritte</td></tr>
+        <tr><td>Gerätesicherheit</td><td>Bildschirmsperren und aktuelle Betriebssystem-Updates</td></tr>
+        <tr><td>Datenverlust</td><td>Keine Speicherung von Athletendaten auf ungesicherten Geräten</td></tr>
+      </tbody>
+    </table>
+
+    <!-- §6 -->
+    <h2>§ 6 Unterauftragnehmer</h2>
+    <p>Eine Übertragung der Verarbeitung auf Unterauftragnehmer bedarf der vorherigen schriftlichen Genehmigung des Auftraggebers.</p>
+
+    <!-- §7 -->
+    <h2>§ 7 Rechte Betroffener</h2>
+    <p>Eingehende Anfragen von Betroffenen (Auskunft, Löschung etc.) leitet der Auftragnehmer unverzüglich an den Auftraggeber weiter. Eigenständige Auskünfte dürfen ohne Absprache nicht erteilt werden.</p>
+
+    <!-- §8 -->
+    <h2>§ 8 Datenpannen und Sicherheitsvorfälle</h2>
+    <p>(1) Sicherheitsvorfälle, die personenbezogene Daten betreffen, sind unverzüglich, spätestens <strong>innerhalb von 24 Stunden</strong>, per E-Mail zu melden an: <a href="/cdn-cgi/l/email-protection#abcac7ced3cac5cfced986c9d9cadec5ebc6c9c9d9cadec585cfce"><span class="__cf_email__" data-cfemail="3b5a575e435a555f5e491659495a4e557b565959495a4e55155f5e">[email&#160;protected]</span></a></p>
+    <p>(2) Die Meldung muss enthalten: Art des Vorfalls, betroffene Datenkategorien, Anzahl betroffener Personen, ergriffene Maßnahmen.</p>
+
+    <!-- §9 -->
+    <h2>§ 9 Beendigung des Vertrages</h2>
+    <p>Nach Beendigung hat der Auftragnehmer alle personenbezogenen Daten zu löschen oder zurückzugeben. Der App-Zugang wird durch den Auftraggeber deaktiviert.</p>
+
+    <!-- §10 -->
+    <h2>§ 10 Haftung</h2>
+    <p>Die Haftung richtet sich nach Art. 82 DSGVO. Jede Partei haftet für Schäden durch ihr zurechenbare DSGVO-Verstöße.</p>
+
+    <!-- §11 -->
+    <h2>§ 11 Schlussbestimmungen</h2>
+    <p>(1) Änderungen bedürfen der Schriftform. (2) Salvatorische Klausel. (3) Es gilt deutsches Recht.</p>
+
+    <!-- Signatures -->
+    <h2>Unterschriften</h2>
+    <div class="field-row" style="margin-top:16px">
+      <span class="field-label">Ort, Datum:</span>
+      <div class="field-line"></div>
+    </div>
+    <div class="sig-grid">
+      <div class="sig-block">
+        <div class="sig-line"></div>
+        <div class="sig-label
